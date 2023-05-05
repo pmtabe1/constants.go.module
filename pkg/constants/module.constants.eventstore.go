@@ -1,0 +1,127 @@
+package constants
+
+const (
+	CustomClaimStructEventStore = "eventstore"
+	EventStoreMongoDB           = "MONGODB"
+	EventStoreOracle            = "ORACLE"
+	EventStoreMSSQL             = "MSSQL"
+	EventStoreFireBird          = "FIREBIRD"
+	EventStoreCasandra          = "CASANDRA"
+	EventStorePostgres          = "POSTGRES"
+	EventStoreEventStoreDB      = "EVENTSTOREDB"
+	EventStorePursal            = "PURSAL"
+	EventStoreKafka             = "KAFKA"
+	EventStoreRabitMQ           = "RABITMQ"
+	EventStoreDynamoDB          = "DYNAMODB"
+	EventStoreCosmosDB          = "COSMOSDB"
+	EventStoreRedisStream       = "REDISTREAM"
+	EventStoreNASStream         = "NASSTREAM"
+	EventStoreCockroachDB       = "COCKROACHDB"
+
+	// ENVIRONMENTAL VARIABLES
+
+	MongoDBStoreUrlEnvKey     = "MONGODB_STORE_URL"
+	MongoDBStorePortKey       = "MONGODB_STORE_PORT" //MongoDBStorePortKey
+	MongoDBStoreHostKey       = "MONGODB_STORE_HOST"
+	MongoDBStoreConnStringKey = "MONGODB_STORE_CONNSTRING"
+	MongoDBStorePasswordKey   = "MONGODB_STORE_PASSWORD"
+	MongoDBStoreUsernameKey   = "MONGODB_STORE_USERNAME"
+	MongoDBStoreDatabaseKey   = "MONGODB_STORE_DATABASE"
+	MongoDBStoreCollectionKey = "MONGODB_STORE_COLLECTION"
+
+	CosmosDBStoreUrlEnvKey     = "COSMOSDB_STORE_URL"
+	CosmosDBStorePortKey       = "COSMOSDB_STORE_PORT" //MongoDBStorePortKey
+	CosmosDBStoreHostKey       = "COSMOSDB_STORE_HOST"
+	CosmosDBStoreConnStringKey = "COSMOSDB_STORE_CONNSTRING"
+	CosmosDBStorePasswordKey   = "COSMOSDB_STORE_PASSWORD"
+	CosmosDBStoreUsernameKey   = "COSMOSDB_STORE_USERNAME"
+	CosmosDBStoreDatabaseKey   = "COSMOSDB_STORE_DATABASE"
+	CosmosDBStoreCollectionKey = "COSMOSDB_STORE_COLLECTION"
+
+	DynamoDBStoreUrlEnvKey     = "DYNAMODB_STORE_URL"
+	DynamoDBStorePortKey       = "DYNAMODB_STORE_PORT" //MongoDBStorePortKey
+	DynamoDBStoreHostKey       = "DYNAMODB_STORE_HOST"
+	DynamoDBStoreConnStringKey = "DYNAMODB_STORE_CONNSTRING"
+	DynamoDBStorePasswordKey   = "DYNAMODB_STORE_PASSWORD"
+	DynamoDBStoreUsernameKey   = "DYNAMODB_STORE_USERNAME"
+	DynamoDBStoreDatabaseKey   = "DYNAMODB_STORE_DATABASE"
+	DynamoDBStoreCollectionKey = "DYNAMODB_STORE_COLLECTION"
+
+	EventStoreDBStoreUrlEnvKey     = "EVENTSTOREDB_STORE_URL"
+	EventStoreDBStorePortKey       = "EVENTSTOREDB_STORE_PORT"
+	EventStoreDBStoreHostKey       = "EVENTSTOREDB_STORE_HOST"
+	EventStoreDBStoreConnStringKey = "EVENTSTOREDB_STORE_CONNSTRING"
+	EventStoreDBStorePasswordKey   = "EVENTSTOREDB_STORE_PASSWORD"
+	EventStoreDBStoreUsernameKey   = "EVENTSTOREDB_STORE_USERNAME"
+	EventStoreDBStoreDatabaseKey   = "EVENTSTOREDB_STORE_DATABASE"
+	EventStoreDBStoreCollectionKey = "EVENTSTOREDB_STORE_COLLECTION"
+
+	PostgresStoreUrlEnvKey     = "POSTGRES_STORE_URL"
+	PostgresStorePortKey       = "POSTGRES_STORE_PORT"
+	PostgresStoreHostKey       = "POSTGRES_STORE_HOST"
+	PostgresStoreConnStringKey = "POSTGRES_STORE_CONNSTRING"
+	PostgresStorePasswordKey   = "POSTGRES_STORE_PASSWORD"
+	PostgresStoreUsernameKey   = "POSTGRES_STORE_USERNAME"
+	PostgresStoreDatabaseKey   = "POSTGRES_STORE_DATABASE"
+	PostgresStoreSchemaKey     = "POSTGRES_STORE_SCHEMA"
+
+	CockroachDBStoreUrlEnvKey   = "COCKROACH_STORE_URL"
+	CockroachStorePortKey       = "COCKROACH_STORE_PORT"
+	CockroachStoreHostKey       = "COCKROACH_STORE_HOST"
+	CockroachStoreConnStringKey = "COCKROACH_STORE_CONNSTRING"
+	CockroachStorePasswordKey   = "COCKROACH_STORE_PASSWORD"
+	CockroachStoreUsernameKey   = "COCKROACH_STORE_USERNAME"
+	CockroachStoreDatabaseKey   = "COCKROACH_STORE_DATABASE"
+	CockroachStoreSchemaKey     = "COCKROACH_STORE_SCHEMA"
+
+	KafkaBrokerStoreUrlEnvKey     = "KAFKA_STORE_URL"
+	KafkaBrokerStorePortKey       = "KAFKA_STORE_PORT"
+	KafkaBrokerStoreHostKey       = "KAFKA_STORE_HOST"
+	KafkaBrokerStoreConnStringKey = "KAFKA_STORE_CONNSTRING"
+	KafkaBrokerStorePasswordKey   = "KAFKA_STORE_PASSWORD"
+	KafkaBrokerStoreUsernameKey   = "KAFKA_STORE_USERNAME"
+	KafkaBrokerStoreGroupKey      = "KAFKA_STORE_GROUP"
+	KafkaBrokerStoreTopicKey      = "KAFKA_STORE_TOPIC"
+
+	PursalBrokerStoreUrlEnvKey     = "PURSAL_STORE_URL"
+	PursalBrokerStorePortKey       = "PURSAL_STORE_PORT"
+	PursalBrokerStoreHostKey       = "PURSAL_STORE_HOST"
+	PursalBrokerStoreConnStringKey = "PURSAL_STORE_CONNSTRING"
+	PursalBrokerStorePasswordKey   = "PURSAL_STORE_PASSWORD"
+	PursalBrokerStoreUsernameKey   = "PURSAL_STORE_USERNAME"
+	PursalBrokerStoreGroupKey      = "PURSAL_STORE_GROUP"
+	PursalBrokerStoreTopicKey      = "PURSAL_STORE_TOPIC"
+
+	RabitMQBrokerStoreUrlEnvKey     = "RABITMQ_STORE_URL"
+	RabitMQBrokerStorePortKey       = "RABITMQ_STORE_PORT"
+	RabitMQBrokerStoreHostKey       = "RABITMQ_STORE_HOST"
+	RabitMQBrokerStoreConnStringKey = "RABITMQ_STORE_CONNSTRING"
+	RabitMQBrokerStorePasswordKey   = "RABITMQ_STORE_PASSWORD"
+	RabitMQBrokerStoreUsernameKey   = "RABITMQ_STORE_USERNAME"
+	RabitMQBrokerStoreGroupKey      = "RABITMQ_STORE_GROUP"
+	RabitMQStoreTopicKey            = "RABITMQ_STORE_TOPIC"
+
+	EventRetryEnvKey                   = "EVENT_RETRY"
+	DefaultEventsTable                 = "events"
+	DefaultEventsTopic                 = "events"
+	DefaultKafkaConnectionString       = "localhost:9092"
+	DefaultMongoDBConnectionString     = ""
+	DefautDynamoDBConnectionString     = ""
+	DefaultPostgresConnectionString    = ""
+	DefaultCockroachDBConnectionString = ""
+	DefaultCosmosDBConnectionString    = ""
+	DefaultRedisStreamConnectionString = ""
+	DefaultNatStreamConnectionString   = ""
+	DefaultRabitMQConnectionString     = ""
+	DefaultPursalConnectionString      = ""
+	// EventsTable is the name of the table used to store events.
+	EventsTable              = DefaultEventsTable
+	EventsDB                 = DefaultEventsTable
+	EventsTopic              = DefaultEventsTopic
+	EventIdentifier          = "events"
+	DataStoreUser            = "events"
+	DataStoreInitialPassword = "gr00t0011"
+	DataStoreSchema          = "events"
+	DataStoreGroup           = "events"
+	DataStoreDatabase        = EventsDB
+)

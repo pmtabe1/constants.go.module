@@ -1,0 +1,22 @@
+*.test.log
+*.testacc.out
+*.test.out
+*.test.tmp
+
+# Dependency directories (remove the ones you're not using)
+/vendor/*
+/ignore/*
+/credentials/*
+/go.sum
+/go.mod
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.coverprofile
+
+# Output of the `go tool trace` command
+*.trace
+
+# Output of `go generate`
+*_gen.go
+
+".gitignore" [noeol] 30L, 487B
