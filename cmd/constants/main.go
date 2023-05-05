@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/pmtabe1/constants.go.module/pkg/constants"
+	"github.com/pmtabe1/constants.go.module/v1/pkg/constants"
 )
 
 func main() {
