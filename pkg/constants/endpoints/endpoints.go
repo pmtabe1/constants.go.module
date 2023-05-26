@@ -1,6 +1,8 @@
 package endpoints
 
 const (
+	DefaultBrokerType   = "kafka"
+	DefaultDatabaseType = "postgres"
 	KafkaEndpoint           = "localhost:9092"
 	RabbitMQEndpoint        = "localhost:5672"
 	PulsarEndpoint          = "localhost:6650"
@@ -67,6 +69,10 @@ var (
 )
 
 func init() {
+	EndpointInitializer()
+}
+
+func EndpointInitializer() {
 	for _, broker := range KnownBrokers {
 		BrokerMap[broker] = broker
 	}
