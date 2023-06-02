@@ -1,5 +1,7 @@
 package endpoints
 
+import "strings"
+
 const (
 	ParamSupportedID        string = "ID|id|REFERENCE|reference|UUID|uuid|REF|ref|UNIQUE|unique|UNIQUEID|uniqueid|PARAM|param|PARAMID|paramid|PARAMREFERENCE|paramreference|PARAMUUID|paramuuid|PARAMREF|paramref|REFERENCEID|referenceid|IDENTIFIER|identifier"
 	DefaultBrokerType              = "kafka"
@@ -81,30 +83,96 @@ func EndpointInitializer() {
 	}
 
 	for _, searchEngine := range KnownSearchEngines {
-		SearchEngineMap[searchEngine] = searchEngine
+
+		splited := strings.Split(searchEngine, "Endpoint")
+
+		if len(splited) > 0 {
+
+			for _, v := range splited {
+				SearchEngineMap[strings.ToLower(v)] = searchEngine
+
+			}
+
+		}
 	}
 
 	for _, database := range KnownDatabases {
-		DatabaseMap[database] = database
+
+		splited := strings.Split(database, "Endpoint")
+
+		if len(splited) > 0 {
+
+			for _, v := range splited {
+				DatabaseMap[strings.ToLower(v)] = database
+
+			}
+
+		}
 	}
 
 	for _, streamingEngine := range KnownStreamingEngines {
-		StreamingEngineMap[streamingEngine] = streamingEngine
+
+		splited := strings.Split(streamingEngine, "Endpoint")
+
+		if len(splited) > 0 {
+
+			for _, v := range splited {
+				StreamingEngineMap[strings.ToLower(v)] = streamingEngine
+
+			}
+
+		}
 	}
 
 	for _, eventStore := range KnownEventStores {
-		EventStoreMap[eventStore] = eventStore
+		splited := strings.Split(eventStore, "Endpoint")
+
+		if len(splited) > 0 {
+
+			for _, v := range splited {
+				EventStoreMap[strings.ToLower(v)] = eventStore
+
+			}
+
+		}
 	}
 
 	for _, bigDataEngine := range KnownBigDataEngines {
-		BigDataEngineMap[bigDataEngine] = bigDataEngine
+		splited := strings.Split(bigDataEngine, "Endpoint")
+
+		if len(splited) > 0 {
+
+			for _, v := range splited {
+				BigDataEngineMap[strings.ToLower(v)] = bigDataEngine
+
+			}
+
+		}
 	}
 
 	for _, mlEngine := range KnownMLEngines {
-		MLEngineMap[mlEngine] = mlEngine
+		splited := strings.Split(mlEngine, "Endpoint")
+
+		if len(splited) > 0 {
+
+			for _, v := range splited {
+				MLEngineMap[strings.ToLower(v)] = mlEngine
+
+			}
+
+		}
 	}
 
 	for _, cloudDatastore := range KnownCloudDatastores {
-		CloudDatastoreMap[cloudDatastore] = cloudDatastore
+		splited := strings.Split(cloudDatastore, "Endpoint")
+
+		if len(splited) > 0 {
+
+			for _, v := range splited {
+				CloudDatastoreMap[strings.ToLower(v)] = cloudDatastore
+
+			}
+
+		}
 	}
 }
