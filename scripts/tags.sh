@@ -1,1 +1,1 @@
-git tag v1.0.0 && git push --tags  && git commit -m "updated version " && git  push
+git tag v1.0.1 && git push --tags  && git commit -m "updated version " && git  push
